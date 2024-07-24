@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pro-detail {
+    position: absolute;
+    z-index: 1;
+    background-color: #e8e8e8;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width:866px) {
+
+    nav button,
+    .for-d-none {
+        display: none;
+    }
+
+    .catagory {
+        justify-content: center;
+    }
+}
+
+@media (max-width:420px) {
+    .nav-user-like {
+        gap: 20px;
+    }
+}
+
+footer a {
+    cursor: pointer;
+}
+
+.breadcrumbs {
+    max-width: 1200px;
+    margin: 20px 0px
+}
+
+.breadcrumbs>* {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.breadcrumbs .crumb:after {
+    content: '>';
+    margin-left: 10px;
+}
+
+.breadcrumbs .crumb:last-child:after {
+    display: none;
+}
+
+.breadcrumbs .crumb a {
+    color: #ddd;
+}
+
+.input {
+    padding: 10px;
+    background: linear-gradient(135deg, rgb(94, 97, 103) 0%, rgb(56, 65, 74) 100%);
+    border: none;
+    color: #9c9b9b;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.input:focus {
+    outline: none;
+    background: linear-gradient(135deg, rgb(94, 97, 103) 0%, rgb(56, 65, 74) 100%);
+
+}
+
+@media (max-width: 320px) {
+    .nav-logo {
+        margin-left: 125px;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav-user-like {
+        position: absolute;
+        margin-left: -310px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .navs {
+        height: 80px;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav-button {
+        position: relative;
+        margin-left: -310px;
+
+    }
+}
+
+/* .mani { 
+    width: 350px;
+    height: 500px;
+    border: solid 2px black;
+margin-left: 250px;
+} */
